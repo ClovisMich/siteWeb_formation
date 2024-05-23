@@ -1,0 +1,369 @@
+@import url(reset.css);
+
+body{
+    background-color: #DDD;
+}
+
+/* generic header for all pages*/
+
+header{
+    display: flex;
+    background-color: antiquewhite;
+    flex-direction: column;
+    align-items: center;
+    color: #444;
+}
+
+header h1{
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "oswald";
+}
+
+header ul{
+    display: flex;
+    font-size: 30px;
+    font-family: "oswald";
+}
+
+header ul li{
+    padding: 40px;
+}
+
+header ul li:hover{
+    background-color: aquamarine;   
+}
+
+/* Page d'acceuil */
+
+.shortPres{
+    background: url(images/nibiru.png) center no-repeat;
+    background-size: cover;
+    height: 400px;
+    
+}
+
+.shortPres h3{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    font-family: "oswald";
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    padding-top: 160px;
+    margin-bottom: 20px;
+}
+
+.bestProduct{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+.bestProduct h3{
+    font-size: 40px;
+    padding: 20px 0;
+    font-family: "oswald";
+    color: #444;
+}
+
+.bestProduct ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.bestProduct ul li{
+    padding: 20px 40px;
+    margin: 0 30px;
+    background-color: #ccc;
+    border-radius: 5px;
+    border: #999 2px solid;
+
+}
+
+.bestProduct li:hover{
+    border-color:  aquamarine;
+}
+
+.bestProduct li:hover >a>span {
+    background-color: aquamarine;
+}
+
+.bestProduct a span{
+    background-color: #aaa;
+    font-family: "oswald";  
+    padding: 5px;
+}
+
+.bestProduct .product-1::before{
+    display: flex;
+    content: url(images/promethean.jpg);
+    flex-direction: column;
+    justify-content: center;
+   margin-bottom: 15px;
+}
+.bestProduct .product-2::before{
+    display: flex;
+    content: url(images/booster.png);
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.bestProduct .product-3::before{
+    display: flex;
+    content: url(images/structure.png);
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+footer{
+    background-color: antiquewhite;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+/* page magasin */
+
+#sellCard h2, #sellBooster h2, #sellStructure h2{
+    font-size: 40px;
+    font-family: "oswald";
+    text-align: center;
+    padding-top: 40px;
+}
+
+#sellCard ul, #sellBooster ul, #sellStructure ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px;
+
+}
+
+#sellCard ul li, #sellBooster ul li, #sellStructure ul li{
+    padding: 20px 0px;
+    text-align: center;
+    
+}
+
+#sellCard .card-1::before{
+    display: flex;
+    content: url(images/promethean.jpg);
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+#sellCard .card-2::before{
+    display: flex;
+    content: url(images/aleirtt.jpeg);
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+#sellCard .card-3::before{
+    display: flex;
+    content: url(images/denko.jpeg);
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#sellCard p, #sellBooster p, #sellStructure p{
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+#sellCard p i:hover, #sellBooster p i:hover, #sellStructure p i:hover, #cart ul li i:hover{
+    color: rgb(98, 202, 168);
+}
+
+#sellBooster .booster-1::before{
+    display: flex;
+    content: url(images/booster.png);
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#sellStructure .structure-1::before{
+    display: flex;
+    content: url(images/structure.png);
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#sellStructure .structure-2::before{
+    display: flex;
+    content: url(images/structure_cramoisi.png);
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+/* Pade d'infos*/
+
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+#info h2{
+    font-family: "oswald";
+    font-size: 45px;
+    padding: 15px 0px;
+}
+
+#info h3, #info h4{
+    font-family: "oswald";
+    font-size: 25px;
+    padding: 15px 0px;
+}
+
+#contact h2{
+    font-family: "oswald";
+    font-size: 45px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+#contact form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+#contact .textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  10px;
+}
+
+#contact input[type="submit"], #cart input[type="submit"]{
+    background-color: aquamarine;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea{
+    background-color: #eee;
+    color: #000;
+}
+
+/*Page du panier*/
+
+#cart h2{
+    text-align: center;
+    font-family: "oswald";
+    font-size: 70px;
+    padding-top: 20px;
+    margin-bottom: 20px ;
+}
+
+#cart ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+#cart .orderCard, #cart .orderBooster, #cart .orderTotal{
+    display: flex;
+    background-color: #ccc;
+    margin: 20px 20%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 10px;
+    font-family: oswald;
+    font-size: 20px;
+    border: #999 2px solid;
+    padding-bottom: 10px;
+
+}
+#cart h3{
+    font-size: 40px;
+}
+
+#cart .card-1::before{
+    display: flex;
+    content: url(images/promethean.jpg);
+    flex-direction: column;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+#cart .card-2::before{
+    display: flex;
+    content: url(images/aleirtt.jpeg);
+    flex-direction: column;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+#cart .booster::before{
+    display: flex;
+    content: url(images/booster.png);
+    flex-direction: column;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+@media screen and (width < 1100px) {
+
+    .bestProduct ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    #sellCard ul, #sellBooster ul, #sellStructure ul{
+        display: flex;
+    gap: 10 px;
+    padding: 0px 50px;
+    flex-direction: column;
+
+    }
+
+    #info h2{
+        font-family: "oswald";
+        font-size: 30px;
+        padding: 15px 0px;
+    }
+
+    #info h3, #info h4{
+        font-family: "oswald";
+        font-size: 15px;
+        padding: 15px 0px;
+    }
+
+    #contact h2{
+        font-family: "oswald";
+        font-size: 30px;
+        padding: 15px 0px;
+        text-align: center;
+    }
+
+    #cart .orderCard, #cart .orderBooster, #cart .orderTotal{
+        margin: 20px 10%;
+    }
+}
